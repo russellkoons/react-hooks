@@ -10,3 +10,11 @@ export function Example() {
     </div>
   );
 }
+
+// You can also use multiple state hooks in one component
+
+function ManyStates() {
+  const [age, setAge] = useState(42);
+  const [fruit, setFruit] = useState('strawberry');
+  const [todos, setTodos] = useState([{ text: 'Learn React Hooks!'}]);
+}
